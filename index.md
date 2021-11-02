@@ -10,7 +10,7 @@ Bachelor of Science Candidate
 Major: Computer Science 2023 
 
 ## Certifiactions 
-* Advanced Wilderness First-Aid (WAFA) 
+*  Advanced Wilderness First-Aid (WAFA) 
 *  Bronze Cross 
 *  CPR C 
 *  Level 1- High Ropes Certifaction 
