@@ -53,9 +53,12 @@ Copy and paste your markdown formatted resume into index.md
 ### Step 4
 On the homepage of your repository, go to the Settings. Once there scroll to the pages section. Ensure that your branch is main and folder is set to /(root) ![](http://g.recordit.co/W80gJXXfAK.gif)
 
-### *Optional Step*
+### *Optional Steps*
 Choose a theme for your static site using a Jekyll theme
 ![](https://recordit.co/F3hqQy1FLJ)
+
+Change the title of your static site
+![]()
 
 ### Step 5
 Using your prefered search engine, search for your website. ![](http://g.recordit.co/kE9gBwsPbP.gif)
