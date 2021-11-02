@@ -12,12 +12,13 @@
 Go to [GitHub](http://recordit.co/J2Jt1TVyHn) and create a new repository.  
 Why GitHub? 
 
-    Distributed Version Control systems like GitHub introduce a means for collaberation between two strangers.  
-    By using a system like GitHub we can allow other people to contriubte their work to our project without needing  
-    to meet with them. No changes will be made to the master file until the owner of the repository decides  
-    the changes are appropriate. This integrated collaberation is critical in software development as many  
-    developers can work simultaniously on a single project, while we are only focusing on documentation   
-    the same prinicples apply here as well. 
+    Distributed Version Control systems like GitHub introduce a means for collaberation  
+    between two strangers.By using a system like GitHub we can allow other people to   
+    contriubte their work to our project without needing to meet with them.   
+    No changes will be made to the master file until the owner of the repository decides  
+    the changes are appropriate. This integrated collaberation is critical   
+    in software development as many developers can work simultaniously   
+    on a single project, while we are only focusing on documentation the same prinicples apply here as well. 
     
 
 ![](http://g.recordit.co/J2Jt1TVyHn.gif)
