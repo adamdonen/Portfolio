@@ -58,10 +58,10 @@ Choose a theme for your static site using a Jekyll theme
 ![](https://recordit.co/F3hqQy1FLJ)
 
 Change the title of your static site
-![]()
+![](http://g.recordit.co/jg48VYiNqQ.gif)
 
 ### Step 5
-Using your prefered search engine, search for your website. ![](http://g.recordit.co/kE9gBwsPbP.gif)
+Using your prefered search engine, search for your website. ![](http://g.recordit.co/jsMpXWrxNM.gif)
 
 Congratulations you have successfully set up your first static site generator using GitHub Pages. 
 
