@@ -43,9 +43,10 @@ Why Markdown?
 ### Step 3  
 Copy and paste your markdown formatted resume into index.md 
 
-    We are again using a Markdown formmated file, in this case our resume. It is important that our resumue   
-    is easily adjustable because resumes should be kept up to date. By using a Markdown file, this allows  
-    us to easily make adjustments to our resume and republsish the resume on our static site. 
+    We are again using a Markdown formmated file, in this case our resume. 
+    It is important that our resumue is easily adjustable because resumes  
+    should be kept up to date. By using a Markdown file, this allows us to   
+    easily make adjustments to our resume and republsish the resume on our static site. 
 
 ![](http://g.recordit.co/U7kFmZAyfk.gif)
 
