@@ -5,6 +5,7 @@ let ticking = false;
 
 function doSomething(scrollPos) {
     // do something with scroll position
+    scrollPos.action("Play")
 }
 
 projectList.addEventListener("scroll", function(e) {
