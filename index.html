@@ -4,107 +4,52 @@
     <meta charset="UTF-8">
     <title>Portfolio Website | Adam Donen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body id ="page-top">
 <div >
-    <h1>This is a Heading</h1>
+    <header>Adam Donen | Portfolio
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
     <p><a href="resume.md">Link to Resume</a></p>
 </div>
 
-<!-- Intro Section -->
-<section id="intro" class="intro-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Adam Donen</h1>
-                <h3>B. Sc. Computer Science Major</h3>
-                <h4>Insert Job</h4>
-                <h4>Passionate about Technology, Data, Software development</h4>
-                <a class="btn btn-default page-scroll" href="#bio">Short Bio</a>
-            </div>
-        </div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Introduce yourself here.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of project 1</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of project 2</p>
+        <a href="#">View Project</a>
     </div>
 </section>
 
-<!-- Bio section -->
-<section id="bio" class="bio-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <h1 class="bio-head">Short Bio</h1>
-                <p>I studied BS in Computer Science at the University of Manitoba. I.</p>
-                <p></p>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-    </div>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
 </section>
-<!--/ Bio Section -->
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <h1 class="contact-head">Contact Me</h1>
-                <form role="form" id="contact-form" class="contact-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="Name" class="form-control" autocomplete="off" id="Name" placeholder="First Name">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="Name" class="form-control" autocomplete="off" id="Name" placeholder="Last Name">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="number" name="Phone" class="form-control" autocomplete="off" id="Phone" placeholder="
-                      Cell Numbers">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" autocomplete="off" id="email" id="email" placeholder="E-mail">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                      <textarea class="
-                      form-control textarea" rows="5" name="Message" id="Message" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn main-btn pull-right">Send a Message</button>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-
-    </div>
-    </div>
-</section>
-<!--/. Contact Section -->
-
-
-
 </body>
 </html>
