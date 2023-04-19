@@ -149,3 +149,42 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0056
 }
+
+#contact .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#contact .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact .social a:hover {
+  background-color: #555;
+}
+
+#contact .social i {
+  font-size: 20px;
+}
+
+#contact .social a.discord:before {
+  content: "\f392";
+}
+#contact .social a.linkedin:before {
+  content: "\f08c";
+}
+#contact .social a.github:before {
+  content: "\f09b";
+}
+
