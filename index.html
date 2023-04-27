@@ -5,42 +5,83 @@
     <title>Portfolio Website | Adam Donen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-2GX/ihw5AlIyfN8r5Y0PT9gOkOzNkwHtO8a7Wch/pkOqk7D0cwMV33Bm7VjAd9l0x7VQ+rsd8G7mUGuP3wqVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body id ="page-top">
-<div >
-    <header>Adam Donen | Portfolio
-    <nav>
+<header>
+        <div class="header">
+        <h2>Adam Donen | Portfolio</h2>
+            <h2> Software Developer</h2>
+        <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#Professional Highlights">Professional Highlights</a> </li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+        </div>
     </header>
-    <p><a href="resume.md">Link to Resume</a></p>
-</div>
-!-- About me --!
-<section id="about">
-    <h2>About Me</h2>
-    <p>Introduce yourself here.</p>
-</section>
 
+
+<!-- About me -->
+<div id="about">
+    <div class="about-content">
+
+    <h2>About Me</h2>
+    <p>Hi there, my name is Adam Donen, and I'm a recent Computer Science graduate from the University of Manitoba.
+        During my studies, I gained proficiency in programming languages such as Python, Java, and SQL, and also have some foundational knowledge of HTML, CSS, and JavaScript.
+        I'm passionate about software engineering because I find the idea of creating software that people will use fascinating.
+        I'm always looking to learn and explore new areas of software development to broaden my skills and knowledge.
+
+        Aside from programming, I enjoy spending time outdoors and have completed multiple multi-week canoe trips.
+        I recently spent six months studying abroad in the Netherlands, which gave me the opportunity to experience
+        a new culture and meet people from all over the world.</p>
+
+    <p><a href="resume.md">Link to Resume</a></p>
+    </div>
+</div>
+
+<div id="Professional Highlights">
+    <div class="highlight-content">
+        <table>
+            <thead><h4>Professional Highlights</h4></thead>
+            <tbody class="table-body">
+            <tr>
+                <td><p>Proficient in programming languages such as Python, Java, and SQL,
+                    with foundational knowledge of HTML, CSS, and JavaScript</p>
+                </td>
+                <td>
+                    <p>Strong problem-solving skills and ability to break down complex problems into smaller, more manageable subproblems</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td><p>Passionate about software engineering and creating software that people will use</p></td>
+                <td><p>Willingness to learn and explore new areas of software development</p></td>
+            </tr>
+            <tr>
+                <td><p>Completed a six-month semester abroad in the Netherlands, gaining experience in international studies and adapting to new cultures</p></td>
+                <td><p>Experienced in spending time outdoors and completing multiple multi-week canoe trips</p></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 <!-- Projects -->
-<section id="projects">
+<div id="projects">
     <h2>Completed Projects</h2>
     <ul id="project-list">
         <li><a href="https://github.com/adamdonen/PasswordHacker-Hyperskill">Password Hacker</a></li>
         <li><a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project">Computer Graphics 2 Ray Tracer</a></li>
-<!--        <li><a href="https://github.com/user/repo3">Project 3</a></li>-->
-<!--        <li><a href="https://github.com/user/repo4">Project 4</a></li>-->
-<!--        <li><a href="https://github.com/user/repo5">Project 5</a></li>-->
+        <li><a href="https://github.com/user/repo3">Project 3</a></li>
+        <li><a href="https://github.com/user/repo4">Project 4</a></li>
+        <li><a href="https://github.com/user/repo5">Project 5</a></li>
     </ul>
-</section>
+</div>
 
-<!-- Contact Me -->
-<section id="contact">
+
+!-- Contact
+<div id="contact">
     <h2>Contact Me</h2>
     <form>
         <label for="name">Name:</label>
@@ -50,13 +91,8 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea><br><br>
         <input type="submit" value="Send">
-        <div class="social">
-            <a href="https://github.com/adamdonen" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/adamdonen/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://discordapp.com/invite/adamdonen" target="_blank"><i class="fab fa-discord"></i></a>
-        </div>
     </form>
-</section>
+</div>
 
 <script src="script.js"></script>
 </body>
