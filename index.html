@@ -8,9 +8,7 @@
 
 </head>
 <body id ="page-top">
-<canvas>
-    <script src="script.js"></script>
-</canvas>
+<canvas></canvas>
 <header>
         <div class="header">
         <h2>Adam Donen | Portfolio</h2>
@@ -26,10 +24,10 @@
         </div>
     </header>
 
-<!-- About me -->
-<div class = "site-content">
 
-<div id="about">
+<div class = "site-content">
+    <!-- About me -->
+<div id="about" class="active">
     <div class="about-content">
 
     <h2>About Me</h2>
@@ -48,36 +46,44 @@
 
 <div id="Professional Highlights">
     <div class="highlight-content">
-        <table>
-            <thead><h4>Professional Highlights</h4></thead>
-            <tbody class="table-body">
-            <tr>
-                <td><p>Proficient in programming languages such as Python, Java, and SQL,
-                    with foundational knowledge of HTML, CSS, and JavaScript</p>
-                </td>
-                <td>
-                    <p>Strong problem-solving skills and ability to break down complex problems into smaller, more manageable subproblems</p>
-                </td>
+        <span class = "content"></span>
+<!--        <table>-->
+<!--            <thead><h4>Professional Highlights</h4></thead>-->
+<!--            <tbody class="table-body">-->
+<!--            <tr>-->
+<!--                <td><p>Proficient in programming languages such as Python, Java, and SQL,-->
+<!--                    with foundational knowledge of HTML, CSS, and JavaScript</p>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <p>Strong problem-solving skills and ability to break down complex problems into smaller, more manageable subproblems</p>-->
+<!--                </td>-->
 
-            </tr>
-            <tr>
-                <td><p>Passionate about software engineering and creating software that people will use</p></td>
-                <td><p>Willingness to learn and explore new areas of software development</p></td>
-            </tr>
-            <tr>
-                <td><p>Completed a six-month semester abroad in the Netherlands, gaining experience in international studies and adapting to new cultures</p></td>
-                <td><p>Experienced in spending time outdoors and completing multiple multi-week canoe trips</p></td>
-            </tr>
-            </tbody>
-        </table>
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td><p>Passionate about software engineering and creating software that people will use</p></td>-->
+<!--                <td><p>Willingness to learn and explore new areas of software development</p></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td><p>Completed a six-month semester abroad in the Netherlands, gaining experience in international studies and adapting to new cultures</p></td>-->
+<!--                <td><p>Experienced in spending time outdoors and completing multiple multi-week canoe trips</p></td>-->
+<!--            </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
     </div>
 </div>
 <!-- Projects -->
 <div id="projects">
     <h2>Completed Projects</h2>
     <ul id="project-list">
+
         <li><a href="https://github.com/adamdonen/PasswordHacker-Hyperskill">Password Hacker</a></li>
         <li><a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project">Computer Graphics 2 Ray Tracer</a></li>
+        <li><a href="https://github.com/user/repo3">Project 3</a></li>
+        <li><a href="https://github.com/user/repo4">Project 4</a></li>
+        <li><a href="https://github.com/user/repo5">Project 5</a></li>
+        <li><a href="https://github.com/user/repo3">Project 3</a></li>
+        <li><a href="https://github.com/user/repo4">Project 4</a></li>
+        <li><a href="https://github.com/user/repo5">Project 5</a></li>
         <li><a href="https://github.com/user/repo3">Project 3</a></li>
         <li><a href="https://github.com/user/repo4">Project 4</a></li>
         <li><a href="https://github.com/user/repo5">Project 5</a></li>
@@ -98,6 +104,11 @@
 </div>
 
 </div>
-
+<script src="background.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="header-animation.js"></script>
+<script src="snap-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+<script src="wordcloud.js"></script>
 </body>
 </html>

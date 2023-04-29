@@ -7,7 +7,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // Setting up the letters
-var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+var letters = 'abcdefghijklmnopqrtsuvwxyz1234567890!@#$%^&*()_+=-|}{":?><~`';
+letters = letters.toUpperCase();
 letters = letters.split('');
 
 // Setting up the columns
@@ -36,4 +37,4 @@ function draw() {
 }
 
 // Loop the animation
-setInterval(draw, 33);
+setInterval(draw, 45);
