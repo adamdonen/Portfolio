@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Website | Adam Donen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body id="page-top">
 <canvas></canvas>
@@ -24,7 +24,7 @@
 </header>
 
 <div class="site-content">
-    <div id="intro" class="active">
+    <div class="active" id="intro">
         <div class="animated-title">
             <div class="text-top">
                 <div>
@@ -42,13 +42,17 @@
     <div id="about">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>Hi there, my name is Adam Donen, and I'm a recent Computer Science graduate from the University of Manitoba.
-                During my studies, I gained proficiency in programming languages such as Python, Java, and SQL, and also have
-                some foundational knowledge of HTML, CSS, and JavaScript. I'm passionate about software engineering because
-                I find the idea of creating software that people will use fascinating. I'm always looking to learn and explore
+            <p>Hi there, my name is Adam Donen, and I'm a recent Computer Science graduate from the University of
+                Manitoba.
+                During my studies, I gained proficiency in programming languages such as Python, Java, and SQL, and also
+                have
+                some foundational knowledge of HTML, CSS, and JavaScript. I'm passionate about software engineering
+                because
+                I find the idea of creating software that people will use fascinating. I'm always looking to learn and
+                explore
                 new areas of software development to broaden my skills and knowledge.</p>
 
-            <p><a href="resume.md">Link to Resume</a></p>
+            <p><a href="resume.html">Link to Resume</a></p>
         </div>
     </div>
 
@@ -63,8 +67,10 @@
     <div id="projects">
         <h2>Completed Projects</h2>
         <ul id="project-list">
-            <li><a href="https://github.com/adamdonen/PasswordHacker-Hyperskill" target="_blank">Password Hacker</a></li>
-            <li><a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project" target="_blank">Computer Graphics 2 Ray Tracer</a></li>
+            <li><a href="https://github.com/adamdonen/PasswordHacker-Hyperskill" target="_blank">Password Hacker</a>
+            </li>
+            <li><a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project" target="_blank">Computer
+                Graphics 2 Ray Tracer</a></li>
             <li><a href="https://unitconverteradamdonen.netlify.app" target="_blank">Converter Web App</a></li>
             <li><a href="https://github.com/user/repo4" target="_blank">Project 4</a></li>
             <li><a href="https://github.com/user/repo5" target="_blank">Project 5</a></li>
@@ -75,9 +81,9 @@
         <h2>Contact Me</h2>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input id="name" name="name" type="text"><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input id="email" name="email" type="email"><br><br>
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea><br><br>
             <input type="submit" value="Send">
@@ -85,9 +91,6 @@
     </div>
 
 </div>
-
-
-
 
 
 <script src="background.js"></script>
