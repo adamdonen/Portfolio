@@ -1,9 +1,8 @@
 const myTags = [
     'JavaScript', 'CSS', 'HTML',
-    'C', 'C++', 'React',
+    'C++', 'React',
     'Python', 'Java', 'git',
-    'django', 'Node.js', 'OpenCV',
-    'GCP', 'MySQL', 'jQuery',
+    "SQL", "JetBrains", "VS Code", "UX Design"
 ];
 
 var tagCloud = TagCloud('.content', myTags, {
@@ -19,7 +18,7 @@ var tagCloud = TagCloud('.content', myTags, {
     // 0 = top
     // 90 = left
     // 135 = right-bottom
-    direction: 135,
+    direction: 0,
 
     // interact with cursor move on mouse out
     keep: true
@@ -30,3 +29,5 @@ var tagCloud = TagCloud('.content', myTags, {
 var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('.content').style.color = random_color;
+
+console.log(tagCloud);

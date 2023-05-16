@@ -23,7 +23,6 @@ const handleMediaQueryChange = (event) => {
              * @docauthor Trelent
              */
             function scrollToSection(event) {
-
                 if (isScrolling) return;
                 isScrolling = true;
 
@@ -31,16 +30,25 @@ const handleMediaQueryChange = (event) => {
                 let nextSection;
 
                 if (scrollDirection === 'down') {
-                    nextSection = currentSection.next();
+                    nextSection = currentSection.next('.site-content > div');
                 } else if (scrollDirection === 'up') {
-                    nextSection = currentSection.prev();
+                    nextSection = currentSection.prev('.site-content > div');
                 }
 
-                if (nextSection.length !== 0) {
+                // Check if the next section is the last section (contact div)
+                const isLastSection = nextSection.is(':last-child');
+
+                if (!isLastSection && nextSection.length !== 0) {
                     $('html, body').animate({
                         scrollTop: nextSection.offset().top
                     }, 1000);
 
+                    currentSection.removeClass('active');
+                    nextSection.addClass('active');
+                } else {
+                    $('html, body').animate({
+                        scrollTop: nextSection.offset().top
+                    }, 1000);
                     currentSection.removeClass('active');
                     nextSection.addClass('active');
                 }
@@ -49,7 +57,7 @@ const handleMediaQueryChange = (event) => {
                     isScrolling = false;
                 }, 1000);
 
-                event.preventDefault();
+                // Prevent scrolling if it's the last section
             }
 
             $(document).on('wheel', function (event) {

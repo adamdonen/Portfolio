@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "flickity": "^3.0.0",
+    "fslightbox": "^3.4.1",
     "marked": "^5.0.0"
-  }
+  },
+  "name": "adamdonen.github.io",
+  "description": "Describe the practical steps of how to host and format a resume using GitHub pages, Jekyll and a Markdown editor while relating the practical steps to the general principles proposed by Andrew Etter in the bok _Modern Technical Writing_.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio Website | Adam Donen</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="CSS/test.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body id="page-top">
 <canvas></canvas>
@@ -37,27 +38,46 @@
             </div>
         </div>
     </div>
-
     <!-- About me -->
     <div id="about">
         <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hi there, my name is Adam Donen, and I'm a recent Computer Science graduate from the University of
-                Manitoba.
-                During my studies, I gained proficiency in programming languages such as Python, Java, and SQL, and also
-                have
-                some foundational knowledge of HTML, CSS, and JavaScript. I'm passionate about software engineering
-                because
-                I find the idea of creating software that people will use fascinating. I'm always looking to learn and
-                explore
-                new areas of software development to broaden my skills and knowledge.</p>
+            <div class="top-content">
+                <h2>About Me</h2>
+            </div>
+            <div class="bottom-content">
+                <p>
+                    I'm a recent graduate with a strong passion for programming and software development. I hold a
+                    degree in
+                    Computer Science
+                    and have a solid foundation in various programming languages such as Python, JavaScript, HTML, and
+                    CSS.
+                    I am driven by a
+                    curiosity to learn and explore new technologies, and I enjoy tackling complex problems with
+                    innovative
+                    solutions.
+                    With a keen eye for detail and a strong dedication to quality, I strive to create impactful and
+                    user-friendly applications.
+                    I am excited to embark on this journey as a professional software developer and contribute to the
+                    ever-evolving world of technology."
+                </p>
 
-            <p><a href="resume.html">Link to Resume</a></p>
+            </div>
+            <div class="links-content">
+                <a href="http://github.com/adamdonen" target="_blank"><img alt="logo"
+                                                                           src="assets/images/github-142-svgrepo-com.svg"
+                                                                           width=50px></a>
+                <a href="http://linkedin.com/in/adamdonen" target="_blank"><img alt="logo"
+                                                                                src="assets/images/linkedin-svgrepo-com.svg"
+                                                                                width="60px"></a>
+                <a href="./assets/Adam%20Donen%20Resume.pdf" target="_blank"><img alt="logo"
+                                                                                  src="assets/images/resume-portfolio-svgrepo-com.svg"
+                                                                                  width="50px"> </a>
+            </div>
         </div>
     </div>
 
-    <div id="highlights">
-        <div class="highlight-content">
+    <div id="skills">
+        <div class="skills-content">
             <h2>Skills</h2>
             <span class="content"></span>
         </div>
@@ -65,40 +85,97 @@
 
     <!-- Projects -->
     <div id="projects">
-        <h2>Completed Projects</h2>
-        <ul id="project-list">
-            <li><a href="https://github.com/adamdonen/PasswordHacker-Hyperskill" target="_blank">Password Hacker</a>
-            </li>
-            <li><a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project" target="_blank">Computer
-                Graphics 2 Ray Tracer</a></li>
-            <li><a href="https://unitconverteradamdonen.netlify.app" target="_blank">Converter Web App</a></li>
-            <li><a href="https://github.com/user/repo4" target="_blank">Project 4</a></li>
-            <li><a href="https://github.com/user/repo5" target="_blank">Project 5</a></li>
-        </ul>
+        <div class="project-container">
+            <h2>Completed Projects</h2>
+            <div class="container">
+                <button id="left-btn"><i class="arrow project-button"></i></button>
+                <!--<img alt="" id="carousel" src="">-->
+                <div class="flip-card actives">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front raytrace">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Ray Tracer Graphics Project</p>
+                            <a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project" target="_blank"><p
+                                    class="repo-link">Repo</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front calculator">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Calculator</p>
+                            <a href="https://simple-calculator-web-app-adamdonen.netlify.app/" target="_blank"><p
+                                    class="repo-link">Link</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front weather">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Calculator</p>
+                            <a href="https://github.com/adamdonen/Weather/" target="_blank"><p
+                                    class="repo-link">Repo</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front converter">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Converter</p>
+                            <a href="hhttps://unitconverteradamdonen.netlify.app/" target="_blank"><p
+                                    class="repo-link">Link</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front spotify">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Spotify API Playlist Maker</p>
+                            <a href="https://github.com/adamdonen/spotifyplaylistmaker" target="_blank"><p
+                                    class="repo-link">Repo</p></a>
+                        </div>
+                    </div>
+                </div>
+                <button id="right-btn"><i class="arrow project-button"></i></button>
+
+            </div>
+        </div>
     </div>
 
     <div id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://formspree.io/f/moqzbyvz"
+              id="contact-form" method="POST">
             <label for="name">Name:</label>
             <input id="name" name="name" type="text"><br><br>
             <label for="email">Email:</label>
             <input id="email" name="email" type="email"><br><br>
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="Send">
+            <textarea id="message" name="message"></textarea>
+            <button id="submit-button" type="submit">Send</button>
         </form>
+
     </div>
 
 </div>
 
-
-<script src="background.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="header-animation.js"></script>
-<script src="snap-scroll.js"></script>
+<script src="JS/background.js"></script>
+<script src="JS/images.js"></script>
+<script src="JS/header-animation.js"></script>
+<script src="JS/snap-scroll.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-<script src="wordcloud.js"></script>
-<script src="sidebar.js"></script>
+<script src="JS/wordcloud.js"></script>
+<script src="JS/sidebar.js"></script>
+
+
 </body>
 </html>
