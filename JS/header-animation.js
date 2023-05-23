@@ -1,6 +1,6 @@
 // JavaScript code for header animation
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.navbar');
     const scrollPosition = window.scrollY;
 
     if (scrollPosition > 0) {
@@ -8,4 +8,6 @@ window.addEventListener('scroll', function() {
     } else {
         header.classList.remove('shrink');
     }
+    
 });
+

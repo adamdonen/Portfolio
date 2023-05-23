@@ -5,10 +5,11 @@ const myTags = [
     "SQL", "JetBrains", "VS Code", "UX Design"
 ];
 
+
 var tagCloud = TagCloud('.content', myTags, {
 
     // radius in px
-    radius: 300,
+    radius: 200,
 
     // animation speed
     // slow, normal, fast

@@ -4,33 +4,56 @@
     <meta charset="UTF-8">
     <title>Portfolio Website | Adam Donen</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+
 </head>
 <body id="page-top">
 <canvas></canvas>
-<header>
-    <div class="header">
-        <h2>Adam Donen | Portfolio</h2>
-        <h2>Software Developer</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#ProfessionalHighlights">Professional Highlights</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+<nav class="navbar sticky-top navbar-expand-lg ">
+    <div class="container-fluid d-flex ">
+            <span class="navbar-text flex-grow-1">
+             Adam Donen | Portfolio
+             </span>
+        <span class="navbar-text flex-grow-2 dont-show">
+                Software Developer
+            </span>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler bg-light"
+                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show flex-grow-1" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </div>
     </div>
-</header>
+</nav>
 
 <div class="site-content">
-    <div class="active" id="intro">
+    <div class="active-div row" id="intro">
         <div class="animated-title">
             <div class="text-top">
                 <div>
                     <span>Adam Donen</span>
-                    <span>Software Developer</span>
+                    <span id="changing-text">Software Developer</span>
                 </div>
             </div>
             <div class="text-bottom">
@@ -38,134 +61,139 @@
             </div>
         </div>
     </div>
-    <!-- About me -->
-    <div id="about">
-        <div class="about-content">
-            <div class="top-content">
-                <h2>About Me</h2>
+    <div class="row"  id="about">
+        <div class="col">
+            <div class="card text-white mb-3">
+                <div class="card-body">
+                    <h4 class="card-title fs-3">About Me</h4>
+                    <p class="card-text">I'm a recent graduate with a strong passion for programming and software
+                        development. I hold a degree in Computer Science and have a solid foundation in various
+                        programming languages such as Python, JavaScript, HTML, and CSS. I am driven by a curiosity
+                        to learn and explore new technologies, and I enjoy tackling complex problems with innovative
+                        solutions. With a keen eye for detail and a strong dedication to quality, I strive to create
+                        impactful and user-friendly applications. I am excited to embark on this journey as a
+                        professional software developer and contribute to the ever-evolving world of technology.</p>
+                    <div class="d-flex justify-content-evenly w-100">
+                        <a class="card-link" href="http://github.com/adamdonen" target="_blank"><img alt="GitHub"
+                                                                                                     src="assets/images/github-142-svgrepo-com.svg"
+                                                                                                     width="50px"></a>
+                        <a class="card-link" href="http://linkedin.com/in/adamdonen" target="_blank"><img
+                                alt="LinkedIn" src="assets/images/linkedin-svgrepo-com.svg" width="60px"></a>
+                        <a class="card-link" href="./assets/Adam%20Donen%20Resume.pdf" target="_blank"><img
+                                alt="Resume" src="assets/images/resume-portfolio-svgrepo-com.svg" width="50px"></a>
+                    </div>
+                </div>
             </div>
-            <div class="bottom-content">
-                <p>
-                    I'm a recent graduate with a strong passion for programming and software development. I hold a
-                    degree in
-                    Computer Science
-                    and have a solid foundation in various programming languages such as Python, JavaScript, HTML, and
-                    CSS.
-                    I am driven by a
-                    curiosity to learn and explore new technologies, and I enjoy tackling complex problems with
-                    innovative
-                    solutions.
-                    With a keen eye for detail and a strong dedication to quality, I strive to create impactful and
-                    user-friendly applications.
-                    I am excited to embark on this journey as a professional software developer and contribute to the
-                    ever-evolving world of technology."
-                </p>
 
-            </div>
-            <div class="links-content">
-                <a href="http://github.com/adamdonen" target="_blank"><img alt="logo"
-                                                                           src="assets/images/github-142-svgrepo-com.svg"
-                                                                           width=50px></a>
-                <a href="http://linkedin.com/in/adamdonen" target="_blank"><img alt="logo"
-                                                                                src="assets/images/linkedin-svgrepo-com.svg"
-                                                                                width="60px"></a>
-                <a href="./assets/Adam%20Donen%20Resume.pdf" target="_blank"><img alt="logo"
-                                                                                  src="assets/images/resume-portfolio-svgrepo-com.svg"
-                                                                                  width="50px"> </a>
+        </div>
+    </div>
+    <div class="row " id="skills">
+        <div class="col">
+            <div class="card w-50 h-100 d-flex justify-content-center align-items-center">
+                <div class="card-body">
+                    <h4 class="card-title fs-3">Skills</h4>
+                    <span class="content"></span>
+                </div>
             </div>
         </div>
     </div>
+    <div class="row " id="projects">
+        <div class="col ">
+            <h2 class="text-center fs-2">Completed Projects</h2>
+            <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="carouselWithControls">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#carouselWithControls" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselWithControls"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselWithControls"
+                            type="button"></button>
+                    <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselWithControls"
+                            type="button"></button>
+                    <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#caruselWithControls"
+                            type="button"
+                    ></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project"
+                               target="_blank">
+                                <img alt="RayTrace" class="d-block w-auto h-auto" src="assets/images/raytrace.jpeg"/>
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="title fs-4">Ray Tracer Graphics Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="https://simple-calculator-web-app-adamdonen.netlify.app/" target="_blank">
+                                <img alt="Calculator" class="d-block h-auto w-auto"
+                                     src="assets/images/calculator.svg"/>
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="title fs-4">Calculator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/adamdonen/Weather/" target="_blank">
+                                <img alt="Calculator" class="d-block w-100 h-100" src="assets/images/weather.svg"/></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="title fs-4">Weather</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://unitconverteradamdonen.netlify.app/" target="_blank">
+                                <img alt="Converter" class="d-block w-100 h-100" src="assets/images/converter.svg"/></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="title fs-4">Converter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://github.com/adamdonen/spotifyplaylistmaker" target="_blank">
+                                <img alt="Spotify" class="d-block w-70 h-80" src="assets/images/spotify.svg"/></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="title fs-4"> Spotify Playlist Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div id="skills">
-        <div class="skills-content">
-            <h2>Skills</h2>
-            <span class="content"></span>
-        </div>
-    </div>
 
-    <!-- Projects -->
-    <div id="projects">
-        <div class="project-container">
-            <h2>Completed Projects</h2>
-            <div class="container">
-                <button id="left-btn"><i class="arrow project-button"></i></button>
-                <!--<img alt="" id="carousel" src="">-->
-                <div class="flip-card actives">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front raytrace">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">Ray Tracer Graphics Project</p>
-                            <a href="https://github.com/adamdonen/Raytracer-Graphics-2-Final-Project" target="_blank"><p
-                                    class="repo-link">Repo</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front calculator">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">Calculator</p>
-                            <a href="https://simple-calculator-web-app-adamdonen.netlify.app/" target="_blank"><p
-                                    class="repo-link">Link</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front weather">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">Calculator</p>
-                            <a href="https://github.com/adamdonen/Weather/" target="_blank"><p
-                                    class="repo-link">Repo</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front converter">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">Converter</p>
-                            <a href="hhttps://unitconverteradamdonen.netlify.app/" target="_blank"><p
-                                    class="repo-link">Link</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front spotify">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="title">Spotify API Playlist Maker</p>
-                            <a href="https://github.com/adamdonen/spotifyplaylistmaker" target="_blank"><p
-                                    class="repo-link">Repo</p></a>
-                        </div>
-                    </div>
-                </div>
-                <button id="right-btn"><i class="arrow project-button"></i></button>
-
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselWithControls"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselWithControls"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
-
-    <div id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/moqzbyvz"
-              id="contact-form" method="POST">
-            <label for="name">Name:</label>
-            <input id="name" name="name" type="text"><br><br>
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email"><br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button id="submit-button" type="submit">Send</button>
-        </form>
-
+    <div class="row " id="contact">
+        <div class="col">
+            <h2 class="text-center fs-4">Contact Me</h2>
+            <form action="https://formspree.io/f/moqzbyvz" id="contact-form" method="POST">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text"><br><br>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button id="submit-button" type="submit">Send</button>
+            </form>
+        </div>
     </div>
-
 </div>
 
 <script src="JS/background.js"></script>
@@ -175,7 +203,7 @@
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 <script src="JS/wordcloud.js"></script>
 <script src="JS/sidebar.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
