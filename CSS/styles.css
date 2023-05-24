@@ -306,7 +306,9 @@ canvas {
     #about {
         overflow-x: hidden;
     }
-
+    .site-content > div {
+        opacity: 1;
+    }
     .card-title {
         padding-top: 75px;
     }
