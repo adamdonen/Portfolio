@@ -50,24 +50,24 @@ const handleMediaQueryChange = (event) => {
                 scrollToSection(event);
             });
 
-            // Event listener for touch screen scrolling
-            let touchStartY = 0;
-            let touchEndY = 0;
-
-            document.addEventListener('touchstart', function (event) {
-                touchStartY = event.touches[0].clientY;
-            });
-
-            document.addEventListener('touchend', function (event) {
-                touchEndY = event.changedTouches[0].clientY;
-                handleTouchScroll();
-            });
-
-            function handleTouchScroll() {
-                const touchDiff = touchEndY - touchStartY;
-                scrollDirection = touchDiff > 0 ? 'down' : 'up';
-                scrollToSection(event);
-            }
+            // // Event listener for touch screen scrolling
+            // let touchStartY = 0;
+            // let touchEndY = 0;
+            //
+            // document.addEventListener('touchstart', function (event) {
+            //     touchStartY = event.touches[0].clientY;
+            // });
+            //
+            // document.addEventListener('touchend', function (event) {
+            //     touchEndY = event.changedTouches[0].clientY;
+            //     handleTouchScroll();
+            // });
+            //
+            // function handleTouchScroll() {
+            //     const touchDiff = touchEndY - touchStartY;
+            //     scrollDirection = touchDiff > 0 ? 'down' : 'up';
+            //     scrollToSection(event);
+            // }
 
             // Event listener for link clicks in the header
             $('.header nav a').on('click', function (event) {
